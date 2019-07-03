@@ -1,0 +1,53 @@
+# API PANIERS
+
+GET {{host-url}}/paniers
+
+###
+
+
+
+# API PRODUITS
+
+GET {{host-url}}//articles
+
+###
+
+POST {{host-url}}/articles
+Content-Type: application/json
+
+{
+  "description": "Pommes",
+  "panierId": "2"
+}
+###
+
+GET {{host-url}}//articles/5
+
+###
+
+DELETE {{host-url}}/articles/7
+###
+
+
+
+# API NOTE PANIERS
+
+GET {{host-url}}//paniers
+
+###
+
+GET {{host-url}}//paniers/2
+
+###
+
+GET {{host-url}}//paniers/2/articles
+
+
+POST {{host-url}}//paniers
+Content-Type: application/json
+
+{
+  "description": "Panier Test",
+}
+###
+
